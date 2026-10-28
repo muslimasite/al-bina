@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Метод Анны — тренировки для женского здоровья</title>
+<meta name="description" content="Анна — специалист по женскому здоровью, тренер и телесный терапевт. Онлайн-тренировки для сестёр: осанка, спина, тазовое дно, беременность и восстановление. Первое занятие бесплатно.">
+<link rel="icon" href="img/logo-160.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600;700&display=swap">
+<style>
+:root{--bg:#F4EBDD;--card:#FBF6EF;--card2:#EFE2CF;--wine:#8A1C2C;--wine-d:#6A1421;--teal:#1B6E7E;--olive:#5C6A3A;--peach:#E9BFA6;--ink:#2B1D1A;--muted:#5B4842;--line:#E2D1BC;--r:24px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Montserrat',system-ui,sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--wine)}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(16px,4vw,40px)}
+.sec{padding:clamp(56px,8vw,104px) 0}
+.kick{margin:0 0 14px;display:inline-flex;align-items:center;gap:12px;font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--wine)}
+.kick:before{content:"";width:28px;height:2px;background:var(--wine);border-radius:2px}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;font-weight:500;color:var(--ink);margin:0}
+h2{font-size:clamp(32px,4.4vw,52px);line-height:1.1;letter-spacing:-.01em}
+h2 em,h1 em{font-style:italic;color:var(--wine)}
+.lead{font-size:clamp(16px,1.4vw,18px);color:var(--muted);max-width:620px;margin:16px 0 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:14px 26px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;transition:background .2s,color .2s,transform .2s}
+.btn:hover{transform:translateY(-1px)}
+.btn:focus-visible,summary:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.btn-wine{background:var(--wine);color:#FFF8F0} .btn-wine:hover{background:var(--wine-d);color:#fff}
+.btn-line{border:1.5px solid var(--wine);color:var(--wine);background:transparent} .btn-line:hover{background:var(--wine);color:#FFF8F0}
+.btn-cream{background:#FBF6EF;color:var(--wine)} .btn-cream:hover{background:#fff}
+/* header */
+.hdr{position:sticky;top:0;z-index:20;background:rgba(244,235,221,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:76px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+.brand img{width:52px;height:52px}
+.brand b{display:block;font-family:'Playfair Display',serif;font-weight:600;font-size:20px;line-height:1.1;color:var(--wine)}
+.brand small{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.nav{display:flex;gap:26px}
+.nav a{text-decoration:none;color:var(--ink);font-size:14px;font-weight:500}
+.nav a:hover{color:var(--wine)}
+.hdr .btn{min-height:46px;padding:10px 20px;font-size:14px}
+@media (max-width:980px){.nav{display:none}}
+@media (max-width:420px){.brand small{display:none}.hdr .btn{padding:10px 16px;font-size:13px}}
+/* hero */
+.hero{padding:clamp(20px,3vw,36px) 0 0}
+.hero-card{background:var(--card2);border-radius:32px;display:grid;grid-template-columns:1.05fr 1fr;align-items:center;gap:clamp(24px,4vw,56px);padding:clamp(28px,5vw,64px);overflow:hidden;position:relative}
+.hero h1{font-size:clamp(36px,4.6vw,60px);line-height:1.04;letter-spacing:-.015em}
+.hero .lead{margin-top:22px}
+.hero-btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.hero-art{position:relative;justify-self:center;width:100%;max-width:470px}
+.hero-art .arch{border-radius:999px 999px 28px 28px;overflow:hidden;aspect-ratio:800/700;border:10px solid #FBF6EF;box-shadow:0 30px 60px -30px rgba(106,20,33,.45)}
+.hero-art .arch img{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.badge{position:absolute;left:-8px;bottom:26px;background:#FBF6EF;border-radius:18px;padding:14px 18px;display:flex;align-items:center;gap:12px;box-shadow:0 16px 30px -18px rgba(43,29,26,.5)}
+.badge b{display:block;font-family:'Playfair Display',serif;font-size:30px;line-height:1;color:var(--wine)}
+.badge span{font-size:12px;line-height:1.3;color:var(--muted)}
+@media (max-width:860px){.hero-card{grid-template-columns:1fr}.hero-art{max-width:380px}}
+/* trust */
+.trust{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:22px}
+.trust div{display:flex;align-items:center;gap:12px;padding:16px 18px;background:var(--card);border-radius:18px;font-size:14px;font-weight:500;line-height:1.35}
+.trust svg{flex:none;color:var(--teal)}
+@media (max-width:860px){.trust{grid-template-columns:1fr 1fr}}
+@media (max-width:420px){.trust{grid-template-columns:1fr}}
+/* worries */
+.worry{background:var(--card);border-radius:32px;padding:clamp(28px,5vw,64px)}
+.chips{list-style:none;margin:32px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr));gap:10px}
+.chip{display:flex;align-items:flex-start;gap:12px;padding:14px 16px;border:1px solid var(--line);border-radius:16px;background:#FFFCF7;font-size:15px;line-height:1.4}
+.chip-dot{flex:none;width:10px;height:10px;margin-top:5px;border-radius:50%;background:var(--wine)}
+.chip:nth-child(3n+2) .chip-dot{background:var(--teal)} .chip:nth-child(3n) .chip-dot{background:var(--olive)}
+.worry-cta{margin-top:30px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding-top:26px;border-top:1px solid var(--line)}
+.worry-cta p{margin:0;font-family:'Playfair Display',serif;font-size:clamp(20px,2.2vw,26px);line-height:1.3}
+/* directions */
+.dirs{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:40px}
+.dir{background:var(--card);border-radius:var(--r);padding:22px 22px 26px;display:flex;flex-direction:column;gap:10px}
+.dir img{width:72%;max-width:180px;height:auto;aspect-ratio:1;margin:4px auto 10px;filter:drop-shadow(0 14px 18px rgba(106,20,33,.18))}
+.dir h3{font-size:24px}
+.dir p{margin:0;font-size:14.5px;color:var(--muted);line-height:1.55}
+@media (max-width:980px){.dirs{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.dirs{grid-template-columns:1fr}.dir{flex-direction:row;flex-wrap:wrap;align-items:center}.dir img{width:96px;height:auto;margin:0}.dir h3{flex:1}.dir p{flex-basis:100%}}
+/* method */
+.steps{list-style:none;margin:40px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;counter-reset:s}
+.steps li{position:relative;background:var(--card);border-radius:var(--r);padding:28px 26px}
+.steps li:before{counter-increment:s;content:"0" counter(s);font-family:'Playfair Display',serif;font-style:italic;font-size:44px;line-height:1;color:var(--peach)}
+.steps h3{font-size:24px;margin:14px 0 8px}
+.steps p{margin:0;color:var(--muted);font-size:15px}
+.self{margin-top:18px;display:flex;flex-wrap:wrap;gap:10px}
+.self span{padding:9px 16px;border-radius:999px;background:#E3EDE9;color:#13525E;font-size:14px;font-weight:600}
+@media (max-width:760px){.steps{grid-template-columns:1fr}}
+/* about */
+.about{display:grid;grid-template-columns:1fr 1.05fr;gap:18px;margin-top:40px}
+.about-q{background:var(--wine);color:#FBEFE6;border-radius:var(--r);padding:clamp(28px,4vw,48px);position:relative;overflow:hidden}
+.about-q .big{font-family:'Playfair Display',serif;font-size:clamp(64px,8vw,96px);line-height:.9;color:#FBF6EF}
+.about-q .big small{display:block;font-family:'Montserrat',sans-serif;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#F2C9B8;margin-top:10px}
+.about-q blockquote{margin:28px 0 0;font-family:'Playfair Display',serif;font-style:italic;font-size:clamp(18px,1.8vw,21px);line-height:1.5}
+.about-q img{position:absolute;right:-30px;top:-30px;width:150px;opacity:.16}
+.about-l{background:var(--card);border-radius:var(--r);padding:clamp(28px,4vw,48px)}
+.about-l h3{font-size:30px}
+.about-l .role{margin:6px 0 22px;color:var(--muted)}
+.checks{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px}
+.checks li{display:flex;gap:12px;align-items:flex-start;line-height:1.45}
+.checks svg{flex:none;color:var(--teal);margin-top:1px}
+@media (max-width:860px){.about{grid-template-columns:1fr}}
+/* formats */
+.trial{display:inline-flex;align-items:center;gap:10px;margin-top:22px;padding:10px 18px;border-radius:999px;background:#E6EADB;color:#45502A;font-weight:600;font-size:14px}
+.fmts{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+.fmt{background:var(--card);border-radius:var(--r);padding:30px 26px;display:flex;flex-direction:column;gap:12px;border:1.5px solid transparent}
+.fmt.hl{border-color:var(--wine)}
+.fmt-ic{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;background:#F3E3D8;color:var(--wine)}
+.fmt h3{font-size:25px}
+.fmt p{margin:0;color:var(--muted);font-size:15px}
+.price{margin-top:auto;padding-top:16px;border-top:1px solid var(--line);font-family:'Playfair Display',serif;font-size:34px;line-height:1.1;color:var(--ink)}
+.price small{font-family:'Montserrat',sans-serif;font-size:14px;color:var(--muted)}
+.fmt .btn{margin-top:8px}
+.note{margin:20px 0 0;color:var(--muted);font-size:15px}
+@media (max-width:900px){.fmts{grid-template-columns:1fr}}
+/* edu */
+.edu{background:var(--wine);color:#FBEFE6;border-radius:32px;padding:clamp(32px,6vw,72px);display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(24px,5vw,64px);align-items:center;position:relative;overflow:hidden}
+.edu .kick{color:#F2C9B8} .edu .kick:before{background:#F2C9B8}
+.edu h2{color:#FFF8F0} .edu h2 em{color:#F2C9B8}
+.edu p{color:#F3DDD3;margin:18px 0 0;font-size:16.5px}
+.edu ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.edu li{display:flex;gap:12px;align-items:center;background:rgba(255,248,240,.08);border:1px solid rgba(255,248,240,.18);border-radius:16px;padding:14px 16px;font-weight:500}
+.edu li svg{flex:none;color:#F2C9B8}
+.edu .btn{margin-top:28px}
+@media (max-width:860px){.edu{grid-template-columns:1fr}}
+/* reviews */
+.revs{columns:3 300px;column-gap:18px;margin-top:40px}
+.rev{break-inside:avoid;margin:0 0 18px;background:var(--card);border-radius:var(--r);padding:26px 24px 22px;position:relative}
+.rev-q{font-family:'Playfair Display',serif;font-size:64px;line-height:.6;color:var(--peach);display:block;height:26px}
+.rev blockquote{margin:0;font-size:15.5px;line-height:1.6}
+.rev figcaption{margin-top:16px;display:flex;align-items:center;gap:10px;font-size:13px;font-weight:600;color:var(--muted)}
+.rev-av{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:#F3E3D8;color:var(--wine)}
+.feat{background:var(--card2);border-radius:32px;padding:clamp(28px,5vw,56px);margin-top:40px;display:grid;grid-template-columns:auto 1fr;gap:clamp(18px,3vw,36px)}
+.feat .n{font-family:'Playfair Display',serif;font-size:clamp(56px,7vw,88px);line-height:.9;color:var(--wine)}
+.feat .n small{display:block;font-family:'Montserrat',sans-serif;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-top:8px}
+.feat blockquote{margin:0;font-family:'Playfair Display',serif;font-size:clamp(18px,1.7vw,21px);line-height:1.55}
+.feat blockquote p{margin:0 0 12px}
+.feat figcaption{margin-top:8px;font-size:13px;font-weight:600;color:var(--muted)}
+@media (max-width:640px){.feat{grid-template-columns:1fr}}
+.quick{list-style:none;margin:10px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.quick li{padding:12px 18px;border-radius:999px 999px 999px 6px;background:#FFFCF7;border:1px solid var(--line);font-size:14.5px;line-height:1.4}
+/* path */
+.path{list-style:none;margin:40px 0 0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.path li{text-align:center;padding:0 6px;position:relative}
+.path .dot{width:64px;height:64px;margin:0 auto 14px;border-radius:50%;display:grid;place-items:center;background:var(--card);border:1.5px solid var(--line);color:var(--wine);font-family:'Playfair Display',serif;font-size:22px}
+.path li:not(:last-child):after{content:"";position:absolute;top:32px;left:calc(50% + 40px);right:calc(-50% + 40px);height:1.5px;background:repeating-linear-gradient(90deg,var(--peach) 0 6px,transparent 6px 12px)}
+.path h3{font-size:19px;margin-bottom:6px}
+.path p{margin:0;font-size:14px;color:var(--muted);line-height:1.45}
+@media (max-width:860px){.path{grid-template-columns:1fr;gap:10px}.path li{display:grid;grid-template-columns:64px 1fr;gap:16px;text-align:left;align-items:center;background:var(--card);border-radius:18px;padding:14px}.path .dot{margin:0;background:#F3E3D8;border:0}.path li:after{display:none}}
+/* faq */
+.faqs{margin-top:36px;display:flex;flex-direction:column;gap:12px;max-width:880px}
+.faq{background:var(--card);border-radius:20px;padding:0 24px}
+.faq summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 0;font-family:'Playfair Display',serif;font-size:clamp(18px,1.8vw,21px);line-height:1.3}
+.faq summary::-webkit-details-marker{display:none}
+.faq-i{flex:none;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#F3E3D8;color:var(--wine);transition:transform .25s}
+.faq[open] .faq-i{transform:rotate(45deg)}
+.faq p{margin:0 0 22px;color:var(--muted);max-width:720px}
+/* cta */
+.cta{background:var(--card2);border-radius:32px;padding:clamp(32px,6vw,72px);display:grid;grid-template-columns:auto 1fr auto;gap:clamp(20px,4vw,48px);align-items:center}
+.cta img{width:clamp(110px,14vw,170px)}
+.cta h2{font-size:clamp(28px,3.6vw,44px)}
+.cta p{margin:12px 0 0;color:var(--muted)}
+@media (max-width:860px){.cta{grid-template-columns:1fr;text-align:center;justify-items:center}}
+/* footer */
+.ftr{padding:40px 0 48px;border-top:1px solid var(--line);margin-top:clamp(56px,8vw,104px)}
+.ftr .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
+.ftr nav{display:flex;flex-wrap:wrap;gap:8px 22px}
+.ftr nav a{color:var(--muted);text-decoration:none;font-size:14px}
+.ftr nav a:hover{color:var(--wine)}
+.ftr small{color:var(--muted);font-size:13px}
+.ftr .tg{display:inline-flex;align-items:center;gap:8px;font-weight:600;text-decoration:none}
+</style>
+</head>
+<body>
+<header class="hdr"><div class="wrap">
+  <a class="brand" href="#top"><img src="img/logo-160.png" alt="" width="52" height="52"><span><b>Метод Анны</b><small>женское здоровье</small></span></a>
+  <nav class="nav" aria-label="Меню"><a href="#method">О методе</a><a href="#dirs">Направления</a><a href="#formats">Форматы</a><a href="#edu">Обучение тренеров</a><a href="#reviews">Отзывы</a><a href="#faq">Вопросы</a></nav>
+  <a class="btn btn-wine" href="https://t.me/annanaryadchicova?text=%D0%90%D1%81%D1%81%D0%B0%D0%BB%D1%8F%D0%BC%D1%83%20%D0%B0%D0%BB%D1%8F%D0%B9%D0%BA%D1%83%D0%BC%20%D0%B2%D0%B0%20%D1%80%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D1%83%D0%9B%D0%BB%D0%B0%D1%85%D0%B8%20%D0%B2%D0%B0%20%D0%B1%D0%B0%D1%80%D0%B0%D0%BA%D1%8F%D1%82%D1%83%D1%85%2C%20%D0%90%D0%BD%D0%BD%D0%B0%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%BE%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B1%D0%BD%D0%BE%D0%B5%20%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5." target="_blank" rel="noopener">Пробное занятие</a>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap">
+  <div class="hero-card">
+    <div>
+      <p class="kick">Метод Анны · женское здоровье</p>
+      <h1>Тело без боли — <em>мягко, регулярно</em> и с заботой о&nbsp;себе</h1>
+      <p class="lead">Онлайн-тренировки для сестёр любого возраста: осанка и спина, тазовое дно, подготовка к беременности и восстановление после родов. Сначала выравниваем ось тела, потом мягко укрепляем — без стресса.</p>
+      <div class="hero-btns"><a class="btn btn-wine" href="https://t.me/annanaryadchicova?text=%D0%90%D1%81%D1%81%D0%B0%D0%BB%D1%8F%D0%BC%D1%83%20%D0%B0%D0%BB%D1%8F%D0%B9%D0%BA%D1%83%D0%BC%20%D0%B2%D0%B0%20%D1%80%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D1%83%D0%9B%D0%BB%D0%B0%D1%85%D0%B8%20%D0%B2%D0%B0%20%D0%B1%D0%B0%D1%80%D0%B0%D0%BA%D1%8F%D1%82%D1%83%D1%85%2C%20%D0%90%D0%BD%D0%BD%D0%B0%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%BE%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B1%D0%BD%D0%BE%D0%B5%20%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5." target="_blank" rel="noopener">Бесплатное пробное занятие<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-line" href="#worry">Что вас беспокоит?</a></div>
+    </div>
+    <div class="hero-art">
+      <div class="arch"><img src="img/hero-objects.jpg" alt="Коврик для йоги, фитбол и фитнес-резинка — иллюстрация" width="800" height="620"></div>
+      <div class="badge"><b>14+</b><span>лет работы<br>с женщинами</span></div>
+    </div>
+  </div>
+  <div class="trust">
+    <div><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-8 5-14 14-14 0 9-6 14-14 14z"/><path d="M5 19 13 11"/></svg>Специалист по женскому здоровью</div>
+    <div><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M9 6h6M8.5 10h7M9 14h6M9.5 18h5"/></svg>Телесный терапевт и массажист</div>
+    <div><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="13" rx="1.5"/><path d="M12 8v13M3 12h18M12 8c-2-4-6-4-6-1.5S10 8 12 8zm0 0c2-4 6-4 6-1.5S14 8 12 8z"/></svg>Первое занятие бесплатно</div>
+    <div><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>Можно начать в любой момент</div>
+  </div>
+</div></section>
+
+<section class="sec" id="worry"><div class="wrap">
+  <div class="worry">
+    <p class="kick">Узнаёте себя?</p>
+    <h2>Что вас <em>беспокоит?</em></h2>
+    <p class="lead">С этим ко мне приходят чаще всего. Многое из этого я прошла сама — и знаю, что телу можно помочь.</p>
+    <ul class="chips"><li class="chip"><span class="chip-dot" aria-hidden="true"></span>Усталость, апатия, нет энергии</li><li class="chip"><span class="chip-dot" aria-hidden="true"></span>Боли в пояснице, шее, лопатках</li><li class="chip"><span class="chip-dot" aria-hidden="true"></span>Лишний вес или, наоборот, сложно набрать</li><li class="chip"><span class="chip-dot" aria-hidden="true"></span>Отёки</li><li class="chip"><span class="chip-dot" aria-hidden="true"></span>Дряблая кожа, целлюлит</li><li class="chip"><span class="chip-dot" aria-hidden="true"></span>Плохой сон, ночная потливость</li><li class="chip"><span class="chip-dot" aria-hidden="true"></span>Тяжесть внизу живота</li><li class="chip"><span class="chip-dot" aria-hidden="true"></span>Подтекания при чихании, кашле, прыжках</li><li class="chip"><span class="chip-dot" aria-hidden="true"></span>Живот, который не уходит даже при спорте и диетах</li><li class="chip"><span class="chip-dot" aria-hidden="true"></span>Проблемы с гормональным фоном</li><li class="chip"><span class="chip-dot" aria-hidden="true"></span>Головные боли, сколиоз, гиперлордоз</li><li class="chip"><span class="chip-dot" aria-hidden="true"></span>Снижение желания и дискомфорт в близости</li></ul>
+    <div class="worry-cta"><p>Напишите, что беспокоит, — подберу формат</p><a class="btn btn-wine" href="https://t.me/annanaryadchicova?text=%D0%90%D1%81%D1%81%D0%B0%D0%BB%D1%8F%D0%BC%D1%83%20%D0%B0%D0%BB%D1%8F%D0%B9%D0%BA%D1%83%D0%BC%20%D0%B2%D0%B0%20%D1%80%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D1%83%D0%9B%D0%BB%D0%B0%D1%85%D0%B8%20%D0%B2%D0%B0%20%D0%B1%D0%B0%D1%80%D0%B0%D0%BA%D1%8F%D1%82%D1%83%D1%85%2C%20%D0%90%D0%BD%D0%BD%D0%B0%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D0%BE%D0%B4%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D1%8C%20%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%20%D1%82%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BE%D0%BA.%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B1%D0%B5%D1%81%D0%BF%D0%BE%D0%BA%D0%BE%D0%B8%D1%82%3A%20" target="_blank" rel="noopener">Написать Анне<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  </div>
+</div></section>
+
+<section class="sec" id="dirs" style="padding-top:0"><div class="wrap">
+  <p class="kick">Направления</p>
+  <h2>С чем я <em>работаю</em></h2>
+  <p class="lead">Для женщин любого возраста — от молоденьких девочек до бабушек.</p>
+  <div class="dirs"><article class="dir"><img src="img/ill-ball.png" alt="" loading="lazy" width="420" height="420"><h3>Беременность</h3><p>Подготовка к беременности, мягкие тренировки во время беременности и восстановление после родов.</p></article><article class="dir"><img src="img/ill-mat.png" alt="" loading="lazy" width="420" height="420"><h3>Осанка и спина</h3><p>Сколиоз, гиперлордоз, боли в шее, пояснице и лопатках, головные боли.</p></article><article class="dir"><img src="img/ill-leaves.png" alt="" loading="lazy" width="420" height="420"><h3>Женское здоровье</h3><p>Мышцы тазового дна, облегчение во время хайда, подтекания, гормональный фон, желание к мужу.</p></article><article class="dir"><img src="img/ill-band.png" alt="" loading="lazy" width="420" height="420"><h3>Тело и тонус</h3><p>Живот, который не уходит, дряблая кожа, целлюлит, отёки, лишний вес и энергия.</p></article></div>
+</div></section>
+
+<section class="sec" id="method" style="padding-top:0"><div class="wrap">
+  <p class="kick">Подход</p>
+  <h2>Метод Анны — <em>комплексный</em></h2>
+  <ol class="steps">
+    <li><h3>Выравниваем ось тела</h3><p>Начинаем с осанки и положения тела — это основа, без которой нагрузка не даёт результата.</p></li>
+    <li><h3>Мягко укрепляем</h3><p>Включаем глубокие мышцы и тазовое дно — без стресса и перегрузок.</p></li>
+    <li><h3>Силовые — когда тело готово</h3><p>Нагрузку повышаем постепенно, только когда тело к этому готово.</p></li>
+  </ol>
+  <div class="self"><span>Самотейпирование</span><span>Самомассаж</span><span>Самоостеопатия</span></div>
+</div></section>
+
+<section class="sec" style="padding-top:0"><div class="wrap">
+  <p class="kick">О тренере</p>
+  <h2>Я прошла это <em>сама</em></h2>
+  <div class="about">
+    <div class="about-q">
+      <img src="img/logo-160.png" alt="" width="150" height="150">
+      <div class="big">14+<small>лет работы с женщинами</small></div>
+      <blockquote>«Я сама прошла многие проблемы, с которыми приходят женщины: головные боли, прибавка в весе больше 20 кг, недержание, диастаз, отсутствие энергии, выпирающий животик. Мне удалось избежать операции на плечо — когда квота уже была получена и дата операции назначена. Плечо больше не беспокоит. Поэтому могу помочь практически каждой».</blockquote>
+    </div>
+    <div class="about-l">
+      <h3>Анна</h3>
+      <p class="role">Специалист по женскому здоровью, тренер</p>
+      <ul class="checks">
+        <li><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Практикующий телесный терапевт и массажист — понимаю, как работает тело и как давать нагрузку</li>
+        <li><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>С женщинами работаю более 14 лет</li>
+        <li><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Мне 40, я мама трёх дочек</li>
+        <li><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Ко мне приходят и молоденькие девочки, и бабушки — есть опыт работы с каждой</li>
+        <li><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Есть сёстры, которые занимаются со мной больше года</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<section class="sec" id="formats" style="padding-top:0"><div class="wrap">
+  <p class="kick">Форматы и стоимость</p>
+  <h2>Как проходят <em>тренировки</em></h2>
+  <div class="trial"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="13" rx="1.5"/><path d="M12 8v13M3 12h18M12 8c-2-4-6-4-6-1.5S10 8 12 8zm0 0c2-4 6-4 6-1.5S14 8 12 8z"/></svg>Первое пробное занятие — бесплатно</div>
+  <div class="fmts">
+    <article class="fmt"><div class="fmt-ic"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="M16 10l5-3v10l-5-3z"/></svg></div><h3>Тренировки в записи</h3><p>Закрытый канал с тренировками — занимаетесь дома в удобное время.</p><div class="price">3 000 ₽ <small>/ месяц</small></div><a class="btn btn-line" href="https://t.me/annanaryadchicova?text=%D0%90%D1%81%D1%81%D0%B0%D0%BB%D1%8F%D0%BC%D1%83%20%D0%B0%D0%BB%D1%8F%D0%B9%D0%BA%D1%83%D0%BC%20%D0%B2%D0%B0%20%D1%80%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D1%83%D0%9B%D0%BB%D0%B0%D1%85%D0%B8%20%D0%B2%D0%B0%20%D0%B1%D0%B0%D1%80%D0%B0%D0%BA%D1%8F%D1%82%D1%83%D1%85%2C%20%D0%90%D0%BD%D0%BD%D0%B0%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B0%D0%B1%D0%BE%D0%BD%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%20%D0%BD%D0%B0%20%D1%82%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%B2%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B8." target="_blank" rel="noopener">Хочу в записи<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
+    <article class="fmt hl"><div class="fmt-ic"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 14.6c2.8-.6 6 1.3 6 4.4"/></svg></div><h3>Zoom по расписанию</h3><p>Живые тренировки в группе. Сейчас идут три женские группы и одна детская — для девочек от 7 до 15 лет.</p><div class="price">3 000 ₽ <small>/ месяц</small></div><a class="btn btn-wine" href="https://t.me/annanaryadchicova?text=%D0%90%D1%81%D1%81%D0%B0%D0%BB%D1%8F%D0%BC%D1%83%20%D0%B0%D0%BB%D1%8F%D0%B9%D0%BA%D1%83%D0%BC%20%D0%B2%D0%B0%20%D1%80%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D1%83%D0%9B%D0%BB%D0%B0%D1%85%D0%B8%20%D0%B2%D0%B0%20%D0%B1%D0%B0%D1%80%D0%B0%D0%BA%D1%8F%D1%82%D1%83%D1%85%2C%20%D0%90%D0%BD%D0%BD%D0%B0%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BD%D0%B8%D0%BC%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%B2%20%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B5%20%D0%B2%20Zoom%20%D0%BF%D0%BE%20%D1%80%D0%B0%D1%81%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D1%8E." target="_blank" rel="noopener">Хочу в группу<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-line" href="https://t.me/annanaryadchicova?text=%D0%90%D1%81%D1%81%D0%B0%D0%BB%D1%8F%D0%BC%D1%83%20%D0%B0%D0%BB%D1%8F%D0%B9%D0%BA%D1%83%D0%BC%20%D0%B2%D0%B0%20%D1%80%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D1%83%D0%9B%D0%BB%D0%B0%D1%85%D0%B8%20%D0%B2%D0%B0%20%D0%B1%D0%B0%D1%80%D0%B0%D0%BA%D1%8F%D1%82%D1%83%D1%85%2C%20%D0%90%D0%BD%D0%BD%D0%B0%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%20%D0%B4%D0%BE%D1%87%D0%BA%D1%83%20%D0%B2%20%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D1%83%D1%8E%20%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D1%83." target="_blank" rel="noopener">Детская группа</a></article>
+    <article class="fmt"><div class="fmt-ic"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg></div><h3>Индивидуально</h3><p>Работа лично с вами — под ваш запрос и ваше тело.</p><div class="price" style="font-size:26px">По запросу</div><a class="btn btn-line" href="https://t.me/annanaryadchicova?text=%D0%90%D1%81%D1%81%D0%B0%D0%BB%D1%8F%D0%BC%D1%83%20%D0%B0%D0%BB%D1%8F%D0%B9%D0%BA%D1%83%D0%BC%20%D0%B2%D0%B0%20%D1%80%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D1%83%D0%9B%D0%BB%D0%B0%D1%85%D0%B8%20%D0%B2%D0%B0%20%D0%B1%D0%B0%D1%80%D0%B0%D0%BA%D1%8F%D1%82%D1%83%D1%85%2C%20%D0%90%D0%BD%D0%BD%D0%B0%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BE%D0%B1%20%D0%B8%D0%BD%D0%B4%D0%B8%D0%B2%D0%B8%D0%B4%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%BC%20%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B5." target="_blank" rel="noopener">Узнать подробнее<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
+  </div>
+  <p class="note">Все программы длительные и регулярные — присоединиться можно в любой момент.</p>
+</div></section>
+
+<section class="sec" id="edu" style="padding-top:0"><div class="wrap">
+  <div class="edu">
+    <div>
+      <p class="kick">Обучение тренеров</p>
+      <h2>Халяльная профессия — <em>тренер для сестёр</em></h2>
+      <p>Обучаю тренеров, в том числе без опыта. Это возможность получить халяльную профессию и вести тренировки, не выходя из дома.</p>
+      <p>Для меня это стало способом самой заниматься регулярно: когда есть ответственность за подопечных, хочешь не хочешь — пойдёшь на тренировку.</p>
+      <a class="btn btn-cream" href="https://t.me/annanaryadchicova?text=%D0%90%D1%81%D1%81%D0%B0%D0%BB%D1%8F%D0%BC%D1%83%20%D0%B0%D0%BB%D1%8F%D0%B9%D0%BA%D1%83%D0%BC%20%D0%B2%D0%B0%20%D1%80%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D1%83%D0%9B%D0%BB%D0%B0%D1%85%D0%B8%20%D0%B2%D0%B0%20%D0%B1%D0%B0%D1%80%D0%B0%D0%BA%D1%8F%D1%82%D1%83%D1%85%2C%20%D0%90%D0%BD%D0%BD%D0%B0%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BE%D0%B1%20%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B8%20%D1%82%D1%80%D0%B5%D0%BD%D0%B5%D1%80%D0%BE%D0%B2." target="_blank" rel="noopener">Узнать об обучении<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+    <ul>
+      <li><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Можно без опыта</li>
+      <li><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/></svg>Работа из дома</li>
+      <li><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>Халяльная профессия</li>
+      <li><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>Регулярность и дисциплина для себя</li>
+    </ul>
+  </div>
+</div></section>
+
+<section class="sec" id="reviews" style="padding-top:0"><div class="wrap">
+  <p class="kick">Отзывы</p>
+  <h2>Что говорят <em>сёстры</em></h2>
+  <figure class="feat" style="margin-left:0;margin-right:0">
+    <div class="n">3<small>недели занятий</small></div>
+    <div>
+      <blockquote>
+        <p>«После трёх недель занятий хочется отметить, что в теле в целом появилась лёгкость, больше сил. Стопы стали намного меньше заваливаться внутрь, начали работать нужные группы мышц, и у меня перестала болеть поясница на постоянной основе. Стало легче и свободнее дышать, благодаря чему почти полностью ушли головокружения.</p>
+        <p>Третья неделя стала для меня интересной, потому что я начала чувствовать связь со своим телом. Я благодарна Аллаху за то, что узнала об Анне, и могу спокойно довериться ей на время своей беременности и после. БаракаЛлаху фики за твой труд и твои знания!»</p>
+      </blockquote>
+      <figcaption>Ученица · спина, стопы, дыхание</figcaption>
+    </div>
+  </figure>
+  <figure class="feat" style="margin:18px 0 0;background:var(--card)">
+    <div class="n" style="color:var(--teal)">✓<small>осанка и намаз</small></div>
+    <div><blockquote><p>«Самочувствие хорошее, спину теперь не надо напрягать, чтобы выпрямиться, — неосознанно получается. Ещё не идеально, конечно, но намного лучше, чем было, альхамдулиЛлях. Тазобедренный сустав меньше хрустеть стал, да и в целом тело тоже — особенно изменения заметны во время намаза. Заметила, что стала больше дышать животом, а не грудной клеткой. И в целом в движениях больше лёгкости чувствуется».</p></blockquote><figcaption>Ученица · осанка</figcaption></div>
+  </figure>
+  <div class="revs"><figure class="rev"><span class="rev-q" aria-hidden="true">“</span><blockquote>Эти тренировки мне так полюбились, Аллахумма барик! Это то, что нужно девушке, — именно тазовое дно прокачивать. У меня самой сидячий образ жизни, я особо не двигаюсь — я делаю эти тренировки, и всё.</blockquote><figcaption><span class="rev-av" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></span>Ученица · Сидячий образ жизни</figcaption></figure><figure class="rev"><span class="rev-q" aria-hidden="true">“</span><blockquote>Мне ооочень понравилась тренировка! Поясница не заболела, тазобедренные суставы подвигались, ягодицы чуть не умерли, пресс включился и начал помогать мне жить эту жизнь. В восторге просто!</blockquote><figcaption><span class="rev-av" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></span>Ученица · Пресс и ягодицы</figcaption></figure><figure class="rev"><span class="rev-q" aria-hidden="true">“</span><blockquote>Тренировка отличная. Я обычно занимаюсь силовыми или кардио, но тут такое расслабление мышц. А это растяжение шеи — просто топ. В конце не хотелось даже вставать с этого упражнения. جزاك الله خيرا</blockquote><figcaption><span class="rev-av" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></span>Ученица · После силовых и кардио</figcaption></figure><figure class="rev"><span class="rev-q" aria-hidden="true">“</span><blockquote>Ассаляму алейкум! Лежу сейчас и чувствую, что ягодичные мышцы стали сильнее: я прям хорошо чувствую их силу. Визуально пока не могу сказать, но предполагаю, что и визуально они подтянулись.</blockquote><figcaption><span class="rev-av" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></span>Ученица · Ягодицы</figcaption></figure><figure class="rev"><span class="rev-q" aria-hidden="true">“</span><blockquote>Упражнение на плечи прям вообще — то, что мой организм просил, альхамдулиллях. Прогрелась и наконец выдохнула: расслабиться сегодня не могла, а сейчас прям выдохнула.</blockquote><figcaption><span class="rev-av" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></span>Ученица · Плечи и расслабление</figcaption></figure><figure class="rev"><span class="rev-q" aria-hidden="true">“</span><blockquote>Мне вас посоветовала сестра по вере. Вашу методику и подачу она мне рассказала, хвалила вас. Аллахумма барик!</blockquote><figcaption><span class="rev-av" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></span>Ученица · По рекомендации</figcaption></figure></div>
+  <ul class="quick" aria-label="Короткие отзывы"><li>Даже не заметила, что прошло 40 минут — на одном дыхании, ма шаа Аллах</li><li>Вроде бы лёгкие упражнения, но я, кажется, вспотела 😄</li><li>Почувствовала лёгкость в теле после тренировки</li><li>Тело максимально расслабилось, прекрасные ощущения, баракаЛлаху фики</li><li>Мой сыночек 3 годика со мной делал — всё ещё ходит упражнения делает, альхамдулиллях</li><li>Очень понравилось занятие, особенно на мышцы тазового дна. Приятные ощущения по всему телу</li></ul>
+</div></section>
+
+<section class="sec" style="padding-top:0"><div class="wrap">
+  <p class="kick">Как начать</p>
+  <h2>Ваш путь <em>к лёгкости в теле</em></h2>
+  <ol class="path">
+    <li><div class="dot">1</div><div><h3>Заявка</h3><p>Пишете в Telegram, что беспокоит</p></div></li>
+    <li><div class="dot">2</div><div><h3>Пробное занятие</h3><p>Первое — бесплатно</p></div></li>
+    <li><div class="dot">3</div><div><h3>Выбор формата</h3><p>Запись, Zoom или индивидуально</p></div></li>
+    <li><div class="dot">4</div><div><h3>Регулярность</h3><p>Тренировки с поддержкой</p></div></li>
+    <li><div class="dot">5</div><div><h3>Результат</h3><p>Лёгкость, силы и тело без боли</p></div></li>
+  </ol>
+</div></section>
+
+<section class="sec" id="faq" style="padding-top:0"><div class="wrap">
+  <p class="kick">Вопросы</p>
+  <h2>Частые <em>вопросы</em></h2>
+  <div class="faqs"><details class="faq"><summary>Сколько стоит?<span class="faq-i" aria-hidden="true"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Абонемент на месяц — 3 000 ₽. Есть индивидуальный формат работы — стоимость обсуждаем лично. Первое пробное занятие — бесплатно.</p></details><details class="faq"><summary>В каком формате проходят тренировки?<span class="faq-i" aria-hidden="true"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Два формата: канал с тренировками в записи — занимаетесь в удобное время, и тренировки по расписанию в Zoom. Сейчас идут три женские группы и одна детская — для девочек от 7 до 15 лет.</p></details><details class="faq"><summary>Какое нужно оборудование?<span class="faq-i" aria-hidden="true"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Есть длинный список рекомендованного, но я всегда предлагаю замены из того, что есть под рукой. Например, вместо ролла подойдёт банное полотенце, скрученное в ролл.</p></details><details class="faq"><summary>Можно присоединиться сейчас?<span class="faq-i" aria-hidden="true"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Да. Все программы длительные и регулярные, поэтому присоединиться можно в любой момент. Есть сёстры, которые занимаются больше года — это помогает поддерживать себя в форме.</p></details><details class="faq"><summary>Мне подойдёт? Я никогда не занималась / мне уже много лет<span class="faq-i" aria-hidden="true"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Ко мне обращаются и молоденькие девочки, и бабушки — есть опыт работы с каждой. Нагрузку даю по вашему телу: сначала выравниваем ось, потом мягко укрепляем, силовые — только когда тело готово.</p></details><details class="faq"><summary>Как записаться?<span class="faq-i" aria-hidden="true"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Напишите мне в Telegram — кнопки на этой странице открывают чат с уже готовым сообщением. Начнём с бесплатного пробного занятия.</p></details></div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <div class="cta">
+    <img src="img/logo-round.png" alt="Логотип «Метод Анны»" width="170" height="170">
+    <div><h2>Запишитесь на <em>бесплатное пробное</em> занятие</h2><p>Напишите в Telegram — кнопка откроет чат с готовым сообщением.</p></div>
+    <a class="btn btn-wine" href="https://t.me/annanaryadchicova?text=%D0%90%D1%81%D1%81%D0%B0%D0%BB%D1%8F%D0%BC%D1%83%20%D0%B0%D0%BB%D1%8F%D0%B9%D0%BA%D1%83%D0%BC%20%D0%B2%D0%B0%20%D1%80%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D1%83%D0%9B%D0%BB%D0%B0%D1%85%D0%B8%20%D0%B2%D0%B0%20%D0%B1%D0%B0%D1%80%D0%B0%D0%BA%D1%8F%D1%82%D1%83%D1%85%2C%20%D0%90%D0%BD%D0%BD%D0%B0%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%BE%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B1%D0%BD%D0%BE%D0%B5%20%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5." target="_blank" rel="noopener">Написать в Telegram<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</div></section>
+</main>
+
+<footer class="ftr"><div class="wrap">
+  <a class="brand" href="#top"><img src="img/logo-160.png" alt="" width="52" height="52"><span><b>Метод Анны</b><small>женское здоровье</small></span></a>
+  <nav aria-label="Нижнее меню"><a href="#method">О методе</a><a href="#formats">Форматы</a><a href="#edu">Обучение тренеров</a><a href="#reviews">Отзывы</a><a href="#faq">Вопросы</a></nav>
+  <a class="tg" href="https://t.me/+XnhSlB4Jr69iYzQ6" target="_blank" rel="noopener"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 4 3 11l6 2 2 6 3-4 5 4z"/><path d="m9 13 8-6"/></svg>Telegram-канал</a>
+  <small>© Метод Анны</small>
+</div></footer>
+</body>
+</html>
